@@ -20,7 +20,7 @@ class Command(BaseCommand):
         with open(file_path) as file:
             rows = csv.reader(file, delimiter = ",", quotechar = '"')
             for row in rows:
-                if row[1].strip() == " ":
+                if row[1].strip() == "":
                     pass
                 else:
                     for data in row:
